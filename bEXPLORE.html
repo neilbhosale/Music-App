@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/bEXPLORE.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>YourTunes</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row topper">
+            <div class="col-md-10"><h1 class="text-center display-4">YourTunes - Explore</h1></div>
+
+        </header>
+        <div class="row topnav">
+          <nav class="links col-md-6 navbar navbar-expand-md">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav text-white nav-link" href="bHOME.html">HOME</a></li>
+              <li class="nav-item"><a class="nav text-white nav-link" href="player.html" data-toggle="tooltip" data-placement="bottom" title="Play A Random Song">RANDOM</a></li>
+              <li class="nav-item"><a class="nav text-white nav-link" href="#">EXPLORE</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- MOODS -->
+        <section>
+            <p class="moodask">What kind of mood are you in today?</p>
+            <div class="card-deck">
+                <div class="card bg-primary" data-toggle="collapse" data-target="#workout">
+                    <img class="card-img-top heart" src="photographs/workout.webp" data-toggle="tooltip" data-placement="right" title="Click and Scroll to see songs.">
+                    <div class="card-body text-center">
+                        <p class="text-white">WORKOUT</p>
+                    </div>
+                </div>
+                <div class="card bg-danger" data-toggle="collapse" data-target="#romance">
+                    <img class="card-img-top heart" src="photographs/44632.png" data-toggle="tooltip" data-placement="right" title="Click and Scroll to see songs.">
+                    <div class="card-body text-center">
+                    <p class="card-text text-white">ROMANCE</p>
+                    
+                    </div>
+                </div>
+                <div class="card bg-success" data-toggle="collapse" data-target="#party">
+                    <img class="card-img-top heart" src="photographs/trueparty.png" data-toggle="tooltip" data-placement="right" title="Click and Scroll to see songs.">
+                    <div class="card-body text-center">
+                    <p class="card-text text-white">PARTY</p>
+                    </div>
+                </div>
+                <div class="card bg-warning" data-toggle="collapse" data-target="#calm">
+                    <img class="card-img-top heart" src="photographs/melancholy.png" data-toggle="tooltip" data-placement="right" title="Click and Scroll to see songs.">
+                    <div class="card-body text-center">
+                    <p class="card-text text-white">MELANCHOLY / CALM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="workout" class="collapse">
+            <ul class="list-group">
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 0; playOrPause();">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song1</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 1; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song2</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 2; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song3</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 3; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song4</p>
+                </li>
+            </ul>
+        </div>
+        <div id="romance" class="collapse">
+            <ul class="list-group">
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 4; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song5</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 5; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song6</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 6; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song7</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 7; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song8</p>
+                </li>
+            </ul>
+        </div>
+        <div id="party" class="collapse">
+            <ul class="list-group">
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 8; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">Song9</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 9; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 10; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 11; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+            </ul>
+        </div>
+        <div id="calm" class="collapse">
+            <ul class="list-group">
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 12; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 13; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 14; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+                <li class="list-group-item" onclick="prevSong = currentSong; currentSong = 15; playOrPause()">
+                    <div class="pla"><img src="photographs/Play.png" class="play"/></div>
+                    <p class="title text-dark">test</p>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="javascript/tooltip.js"></script>
+    <script src="javascript/EXPLORE.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/player.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Tunes: Player</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- Contains link to homepage and explore page -->
+        <header class="row topper">
+            <div class="col-md-10"><h1 class="text-center display-5">YourTunes - Now Playing</h1></div>
+        </header>
+        <div class="row topnav">
+          <nav class="links col-md-6 navbar navbar-expand-md">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav text-white nav-link" href="bHOME.html">HOME</a></li>
+              <li class="nav-item"><a class="nav text-white nav-link" href="bEXPLORE.html">EXPLORE</a></li>
+              <li class="nav-item"><a class="nav text-white nav-link" href="#" >RANDOM</a></li>
+            </ul>
+          </nav>
+          <div class="col-md-6 search">
+            <span class="search-container">
+            <input type="text" placeholder="Search Music" > 
+            <button type="submit"><i class="fa fa-search" style="color: white; text-align: center;"></i></button>
+            </span>
+          </div>
+        </div>
+
+        <!-- MUSIC PLAYING BOX -->
+
+        <main class="mx-auto musicbox">
+          <div class="image">
+          <img class="poster" src="photographs/default.jpg"/>
+          <p class="img-text text-white mx-auto"></p>
+          </div>
+          <div class="controls">
+            <div class="buttons row">
+              <div class="pre col-md-4"><img src="photographs/Pre.png" class="pre" onclick="pre()"/></div>
+              <div class="pla col-md-4"><img src="photographs/Pause.png" class="play" onclick="playOrPause()"/></div>
+              <div class="next col-md-4"><img src="photographs/Next.png" class="next" onclick="next()"/></div>
+            </div>
+
+            <div class="seekbar mx-auto">
+              <div class="fill"></div>
+              <div class="handle"></div>
+            </div>
+         </div>
+        </main>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/089c971aeb.js" crossorigin="anonymous"></script>
+    <script src="javascript/player.js"></script>
+    <script src="javascript/tooltip.js"></script>
+</body>
+</html>

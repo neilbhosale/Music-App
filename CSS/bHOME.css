@@ -1,0 +1,239 @@
+body{
+    background: url('../photographs/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.topper{
+    background: rgb(164, 235, 23);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+h1{
+    font-family: Lobster;
+    color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 90px;
+}
+a.log{
+    transition: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+a.sign{
+    transition: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+a.log:hover{
+    background: rgb(218, 218, 7);
+    transform: scale(1.1);
+}
+a.sign:hover{
+    background: rgb(218, 218, 7);
+    transform: scale(1.1);
+}
+
+/* NAVIGATION */
+
+.topnav{
+    margin-top: 90px;
+}
+a.nav{
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 2px 2px 2px 15px;
+    background-color: green;
+    width: 100px;
+    transition: 0.3s;
+    position: relative;
+    right: 11px;
+}
+a.nav:hover{
+    background-color: rgb(218, 218, 7);
+    transform: scale(1.1);
+}
+.topnav .search{
+    right:0;
+}
+span.search-container{
+    position: absolute;
+    right: 4px;
+    top: 8px;
+}
+
+.search-container input[type="text"]{
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: -5px;
+    background: #f1f1f1;
+    width: 250px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.topnav input[type=text]:focus{
+    width: 500px;
+}
+.topnav .search-container button{
+    cursor: pointer;
+    width: 32px;
+    height: 33px;
+    border: 3px solid green;
+    border-radius: 5px;
+    background: green;
+}
+
+/* GREETING */
+#greeting{
+    font-family: Lobster;
+    text-align: center;
+    margin: 20px;
+    color:green;
+    font-size: 50px;
+}
+/* MUSIC BOX */
+* {box-sizing:border-box}
+
+
+.music-box{
+    max-width:400px;
+    position: relative;
+    left: 335px;
+    padding:0;
+    margin-top: 10px;
+    max-height: 230px;
+    border: 5px solid green;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+img{
+    width: 100%;
+    height: 215px;
+}
+/* Previous and next buttons */
+ a.prev{
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* the next button should be on the right */
+a.next{
+    transition: 0.6s ease;
+    user-select: none;
+} 
+/* on hover on button, make it's background green. */
+a.prev:hover, a.next:hover{
+    background-color: rgba(56, 179, 32, 0.5);
+}
+
+/* the caption text */
+.text {
+    color:yellow;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: Lobster;
+}
+
+
+/* PLAYER */
+
+
+.foot{
+    display: none;
+    height: 120px;
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 310px;
+    border: 0;
+    border-radius: 20px;
+    background: rgb(207, 200, 200);
+}
+
+p.m-text{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-weight: bolder;
+}
+.buttons{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    left: 15px;
+    top: 60px;
+}
+div.pre, div.next, div.pla{
+left: 30px;
+}
+img.pre, img.next, img.play{
+    cursor: pointer;
+    background: green;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.seekbar{
+    position: absolute;
+    left: 75px;
+    top: 37px;
+    width: 300px;
+    height: 6px;
+    background-color: gray;
+    display: flex;
+    border-radius:50px;
+    cursor: pointer;
+
+}
+.fill{
+    height: 6px;
+    background-color: green;
+    border-radius: 20px;
+    width: 0px;
+}
+.handle{
+    width: 8px;
+    height: 8px;
+    background-color:darkgreen;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+div.close{
+    position: absolute;
+    top: 20%;
+    background: rgb(7, 119, 7);
+    height: 60%;
+    width: 20px;
+    border: 0;
+    border-radius: 20px;
+}
+
+/* .dropdown-item{
+    height: 23px;
+} */
+.dropdown-menu .dropdown-item a{
+    text-decoration: none;
+    color: black;
+}

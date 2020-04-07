@@ -1,0 +1,139 @@
+body{
+    background: url('../photographs/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.topper{
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+h1{
+    font-family: Lobster;
+    color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 90px;
+}
+
+/* NAVIGATION */
+
+a.nav{
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 2px 2px 2px 15px;
+    background-color: green;
+    width: 100px;
+    transition: 0.3s;
+    position: relative;
+    right: 11px;
+}
+a.nav:hover{
+    background-color: rgb(218, 218, 7);
+    transform: scale(1.1);
+}
+.topnav .search{
+    right:0;
+}
+span.search-container{
+    position: absolute;
+    right: 4px;
+    top: 8px;
+}
+
+.search-container input[type="text"]{
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: -5px;
+    background: #f1f1f1;
+    width: 250px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.topnav input[type=text]:focus{
+    width: 500px;
+}
+.topnav .search-container button{
+    cursor: pointer;
+    width: 32px;
+    height: 33px;
+    border: 3px solid green;
+    border-radius: 5px;
+    background:green;
+}
+
+main.musicbox{
+    height: 360px;
+    width: 450px;
+    margin-top: 30px;
+    border-radius: 30px;
+    background: rgb(207, 200, 200);
+
+}
+/* song poster */
+img.poster{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: 250px;
+}
+.image{
+    position: relative;
+}
+.img-text{
+    position: absolute;
+    top: 210px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.buttons{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    left: 15px;
+    top: 15px;
+}
+div.pre, div.next, div.pla{
+left: 30px;
+}
+img.pre, img.next, img.play{
+    cursor: pointer;
+    background: green;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+/* SEEKBAR */
+.seekbar{
+    width: 300px;
+    height: 6px;
+    background-color: gray;
+    display: flex;
+    border-radius:50px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.fill{
+    height: 6px;
+    background-color: green;
+    border-radius: 20px;
+    width: 0px;
+}
+.handle{
+    width: 8px;
+    height: 8px;
+    background-color:darkgreen;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+

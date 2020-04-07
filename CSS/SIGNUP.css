@@ -1,0 +1,53 @@
+body{
+    background: url('../photographs/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+p.aske{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: green;
+}
+a.alte{
+    position: absolute;
+    right:75px;
+    top: 40px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a.alte:hover{
+    transform: scale(1.1);
+}
+a.home{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a.home:hover{
+    transform: scale(1.1);
+}
+div.main{
+    max-width: 600px;
+    background: greenyellow;
+}
+p.logo{
+    font-size: 50px;
+    text-align:center;
+    font-family: Lobster;
+    position: relative;
+}
+.rel{
+    position: relative;
+}
+.logbtn{
+    position: absolute;
+    left: 220px;
+}

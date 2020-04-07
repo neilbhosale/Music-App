@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/bHOME.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>YourTunes</title>
+  </head>
+  <body>
+
+      <div class="container-fluid">
+
+        <!-- HEADER -->
+
+          <header class="row topper">
+              <div class="col-md-10"><h1 class="text-center display-4">YourTunes.com</h1></div>
+              <div class="col-md-1">
+                  <a href="LOGIN.html" class="log text-white btn-block">Login</a>
+                  <a href="SIGNUP.html" class="sign text-white btn-block">Signup</a>
+              </div>
+          </header>
+
+          <!-- navigation-->
+
+          <div class="row topnav">
+            <nav class="links col-md-6 navbar navbar-expand-md">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav text-white nav-link" href="bEXPLORE.html" data-toggle="tooltip" title="Explore Music" data-placement="bottom">EXPLORE</a></li>
+                <li class="nav-item"><a class="nav text-white nav-link" href="player.html" data-toggle="tooltip" title="Play A Random Song" data-placement="bottom">RANDOM</a></li>
+              </ul>
+            </nav>
+
+            <!-- search -->
+
+            <div class="col-md-6 search">
+              <span class="search-container">
+              <input type="text" placeholder="Search Music" onkeydown="search()" class="dropdown-toggle" data-toggle="dropdown" id="myInput"> 
+              <button type="submit"><i class="fa fa-search" style="color:white"></i></button>
+
+                <li class="dropdown-item"><a href="#">A Lovely Night</a></li>
+                <li class="dropdown-item"><a href="#">Stockholm Syndrome</a></li>
+                <li class="dropdown-item"><a href="#">City Of Stars</a></li>
+                <li class="dropdown-item"><a href="#">18</a></li>
+                <li class="dropdown-item"><a href="#">If I Could Fly</a></li>
+                <li class="dropdown-item"><a href="#">Night Changes</a></li>
+              </ul>
+              </span>
+            </div>
+
+          </div>
+
+          <!-- info -->
+          <div class="alert alert-info alert-dismissible mx-auto" style="width: 30%">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Info!</strong> Click the images below to play the song.
+          </div>
+
+          <!-- MAIN -->
+
+          <main>
+            <p id="greeting">TEXT</p>
+
+          <!-- JUKE BOX -->
+
+          <section id="demo" class="carousel slide music-box" data-ride="carousel" data-interval="2000">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#foo"><img src="photographs/lovelynight.jpg" alt="Livin on a prayer" class="rounded" onclick="currentSong = 2; playSong()"></a>
+                <div class="carousel-caption">
+                  <p class="text">A Lovely Night - La La Land</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#foo"><img src="photographs/stockholm.jpg" alt="I Feel Fine" class="rounded" onclick="currentSong = 5; playSong()"></a>
+                <div class="carousel-caption">
+                  <p class="text">Stockholm Syndrome -One Direction</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#foo"><img src="photographs/nightchanges.jfif" alt="Your Song" class="rounded" onclick="currentSong = 4; playSong()"></a>
+                <div class="carousel-caption">
+                  <p class="text">Night Changes - One Direction</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#foo"><img src="photographs/ificouldfly.jpg" alt="ificouldfly" class="rounded" onclick="currentSong = 3; playSong()"></a>
+                <div class="carousel-caption">
+                  <p class="text">If I Could Fly - One Direction</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- controls -->
+
+            <a class="carousel-control-prev prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+          </section>
+          </main> 
+
+          <!-- player -->
+
+          <footer class="foot" id="foo">
+            <p class="m-text text-dark">dsbskjajkdsa</p>
+            <div class="controls">
+              <div class="seekbar mx-auto">
+                <div class="fill"></div>
+                <div class="handle"></div>
+              </div>
+              <div class="buttons row">
+                <div class="pre col-md-4"><img src="photographs/Pre.png" class="pre" onclick="pre()"/></div>
+                <div class="pla col-md-4"><img src="photographs/Pause.png" class="play" onclick="playOrPause()"/></div>
+                <div class="next col-md-4"><img src="photographs/Next.png" class="next" onclick="next()"/></div>
+              </div>
+           </div>
+           <div class="close" onclick="closePlayer()" data-toggle="tooltip" title="Close Player" data-placement="left"></div>
+          </footer>
+      </div>
+
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="javascript/bHOME.js"></script>
+    <script src="javascript/tooltip.js"></script>
+  </body>
+</html>
